@@ -1,0 +1,151 @@
+.checkout-container {
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.checkout-content {
+  width: 75%;
+  /*max-width: 1200px;
+  margin: 20px auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-content > div {
+  padding-top: 10px;
+}
+
+.delivery-address h3,
+.delivery-details h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.checkout-form {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 80%;
+}
+.edit-button {
+  float: right;
+  color: #9fd62f;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+}
+.checkout-form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.checkout-form input {
+  border-radius: 7px;
+  border: 2px solid #e8e8e8;
+}
+.address-appartment-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.address-container {
+  width: 55%;
+}
+.appartment-container {
+  width: 45%;
+}
+.city-state-container {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+.state-container {
+  display: flex;
+  align-items: center;
+}
+.dropdown {
+  margin-left: -25px;
+}
+.checkout-content form input {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.item-container {
+  display: flex;
+  background-color: #fff;
+  background-repeat: 12px;
+}
+.item-details {
+  display: flex;
+}
+.item-details img {
+  width: 100px;
+  margin-right: 20px;
+}
+.item-name-property {
+  display: flex;
+  flex-direction: column;
+}
+.sneakers {
+  font-weight: 500;
+}
+.item-property,
+.item-value {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+.item0 {
+  color: #2a8703;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.item-quantity {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.item-property p,
+.quantity {
+  color: #888888;
+  font-weight: 600;
+}
+.item-value p,
+.quantity-details {
+  color: #888888;
+  font-weight: 400;
+}
+
+.summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.summary ul li {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .checkout-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-content > div {
+    flex: 1 1 100%;
+  }
+
+  .header-icons {
+    flex-direction: column;
+  }
+
+  .edit-icon {
+    display: block;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,15 @@
+.category-heading {
+  font-weight: 500;
+}
+.related-categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.btn-category {
+  background-color: transparent;
+  border: 0.7px solid #9fd62f;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
