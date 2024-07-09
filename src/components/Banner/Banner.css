@@ -11,3 +11,14 @@
   color: #817664;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .banner-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-text {
+    font-size: 16px;
+  }
+}
