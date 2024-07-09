@@ -9,7 +9,7 @@
 .card {
   flex: 1 1 calc(20% - 20px);
   margin: 10px;
-  padding: 10px;
+
   cursor: pointer;
   text-align: center;
   background-color: #fff;
@@ -25,8 +25,9 @@
   height: auto;
   margin-bottom: 1rem;
   background-color: #f9f9f9;
-  object-fit: cover;
-  border-radius: 8px;
+}
+.card-img:hover {
+  border-bottom: 1px solid #9fd62f;
 }
 
 .card-title {
