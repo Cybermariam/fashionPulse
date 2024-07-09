@@ -2,6 +2,7 @@ import Products from '../../components/Products/Products';
 import PropTypes from 'prop-types';
 import Category from '../../components/Category/Category';
 import Sidebar from '../../Sidebar/Sidebar';
+import './Home.css';
 
 function Home({ incrementCartCount }) {
   return (

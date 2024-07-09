@@ -41,3 +41,14 @@ li {
   flex-grow: 1;
   padding: 20px;
 }
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-text {
+    font-size: 16px;
+  }
+}

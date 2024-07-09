@@ -15,7 +15,9 @@ const Cart = () => {
     <>
       <h1 className="heading"> CART</h1>
       <div className="cart-page">
-        <h2>Cart item(s) (0)</h2>
+        <h2>
+          Cart item(s) <span>0</span>{' '}
+        </h2>
         <div className="cart-container">
           <div className="cart-items">
             <div className="empty-cart">

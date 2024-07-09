@@ -33,4 +33,4 @@ function App() {
   );
 }
 
-export default App; // Ensure App is exported as default
+export default App;
