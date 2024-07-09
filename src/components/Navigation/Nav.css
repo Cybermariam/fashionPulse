@@ -10,10 +10,7 @@ nav {
   align-items: center;
   width: 100%;
 }
-.logo {
-  width: 250px;
-  height: 35px;
-}
+
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -51,6 +48,7 @@ nav {
   position: absolute;
   left: 10px;
   color: gray;
+  cursor: pointer;
 }
 
 .profile-container {

@@ -1,5 +1,15 @@
+.footer-logo {
+  margin-bottom: 24px;
+}
+.footer-address {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 .section_padding {
-  padding: 4rem 4rem;
+  margin-top: 60px;
+  padding: 3rem 3rem;
 }
 .footer {
   background-color: #9fd62f;
@@ -31,26 +41,31 @@
   color: white;
 }
 a {
-  color: rgb(175, 175, 179);
+  color: white;
   text-decoration: none;
 }
-.sb_footer-links_div h4 {
+
+.sb_footer-links-div h4 {
   font-size: 18px;
   font-family: 'Urbanist';
   font-weight: 500;
-  line-height: 21.6px;
-  margin-bottom: 0.9rem;
+  line-height: 22px;
+  color: #2a8703;
+  margin-bottom: 10px;
 }
-.sb_footer-links_div p {
-  font-size: 12px;
-  line-height: 15px;
-  margin: 0.5rem 0;
+.sb_footer-links-div p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 12px;
   cursor: pointer;
+  color: white;
 }
+
 .sb_footer-below {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0.2rem;
 }
 .sb_footer-below-links {

@@ -1,0 +1,22 @@
+.summary-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.estimated-info {
+  background-color: #fff;
+  display: flex;
+  padding: 14px 16px;
+  border-radius: 8px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.checkout-review {
+  display: flex;
+  background-color: #eaf3e6;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 8px 16px;
+}

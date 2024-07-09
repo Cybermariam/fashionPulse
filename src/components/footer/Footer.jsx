@@ -7,9 +7,13 @@ export default function footer() {
       <div className="sb_footer section_padding">
         <div className="sb_footer-links">
           <div className="sb_footer-links-di">
-            <img src={Logo} alt="FashionPulse logo" className="logo" />
-            <small>2089 Allen Avenue, Ikeja, Lagos +234 000 888 999 88</small>
-            <a href="#">Info@Fashionpulse.com</a>
+            <img src={Logo} alt="FashionPulse logo" className="footer-logo" />
+            <p className="footer-address">
+              2089 Allen Avenue, Ikeja, Lagos <br /> +234 000 888 999 88
+            </p>
+            <a href="Info@Fashionpulse.com" className="footer-address">
+              Info@Fashionpulse.com
+            </a>
           </div>
 
           <div className="sb_footer-links-div">

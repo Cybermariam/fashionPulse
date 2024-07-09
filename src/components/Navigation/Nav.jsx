@@ -14,7 +14,9 @@ export default function Nav({ cartItemCount }) {
   return (
     <nav>
       <div className="nav-container">
-        <img src={Logo} alt="Fashionpulse logo" className="logo" />
+        <a href="/">
+          <img src={Logo} alt="Fashionpulse logo" className="logo" />
+        </a>
         <ul className="navbar-menu">
           <li>Men</li>
           <li>Women</li>

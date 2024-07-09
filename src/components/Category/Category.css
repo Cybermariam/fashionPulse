@@ -1,9 +1,14 @@
+.categories-container {
+  margin-top: 40px;
+}
+
 .category-heading {
   font-weight: 500;
+  margin-left: 50px;
 }
 .related-categories {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 2rem;
 }
 .btn-category {

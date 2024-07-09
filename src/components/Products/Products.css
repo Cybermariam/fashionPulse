@@ -1,61 +1,24 @@
 /* .card-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 12rem;
-  margin-top: 2rem;
-  z-index: -2;
-}
-.card {
-  margin: 20px;
-  border: 2px solid #ededed;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.card-img {
-  width: 13rem;
-  margin-bottom: 1rem;
-  background-color: #f9f9f9;
-}
-
-.card-title {
-  margin-bottom: 1rem;
-}
-
-.card-reviews {
-  margin-top: 1rem;
-  display: flex;
-}
-.total-reviews {
-  margin-left: 10px;
-}
-.ratings-star {
-  margin-right: 12px;
-}
-.card-price {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-} */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Adjust to fit items properly */
-  padding: 0 2rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
   margin-top: -2.3rem;
 }
 
 .card {
-  flex: 1 1 calc(20% - 20px); /* This will adjust the width of the cards */
+  flex: 1 1 calc(20% - 20px);
   margin: 10px;
-  border: 2px solid #ededed;
   padding: 10px;
   cursor: pointer;
   text-align: center;
 }
+.card:hover {
+  border: 1px solid #9fd62f;
+}
 
 .card-img {
-  width: 100%; /* Make the image responsive */
+  width: 100%;
   height: auto;
   margin-bottom: 1rem;
   background-color: #f9f9f9;
@@ -64,6 +27,69 @@
 .card-title {
   margin-bottom: 1rem;
 }
+.card-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.card-reviews {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratings-star {
+  margin-right: 2px;
+  font-size: 14px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card-price div {
+  font-weight: 300;
+  font-size: 16px;
+} */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: -2.3rem;
+}
+
+.card {
+  flex: 1 1 calc(20% - 20px);
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  border: 1px solid #9fd62f;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 18px;
+}
 
 .card-reviews {
   margin-top: 1rem;
@@ -72,12 +98,9 @@
   align-items: center;
 }
 
-.total-reviews {
-  margin-left: 10px;
-}
-
 .ratings-star {
   margin-right: 2px;
+  font-size: 14px;
 }
 
 .card-price {
@@ -85,4 +108,9 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.card-price div {
+  font-weight: 300;
+  font-size: 16px;
 }
