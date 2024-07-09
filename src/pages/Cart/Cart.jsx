@@ -1,9 +1,15 @@
 import './cart.css';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
+  const navigate = useNavigate();
+  const handleCheckoutClick = () => {
+    navigate('/checkout');
+  };
   return (
     <>
       <div className="cart-page">
+        <h1 className="heading"> MEN&#39;S SNEAKERS</h1>
         <div className="cart-container">
           <div className="cart-items">
             <h2>Cart item(s) (0)</h2>
@@ -41,7 +47,9 @@ const Cart = () => {
             <h4>
               Estimated Total: <span>₦0</span>
             </h4>
-            <button className="checkout-button">Proceed to Checkout</button>
+            <button className="checkout-button" onClick={handleCheckoutClick}>
+              Proceed to Checkout
+            </button>
           </div>
         </div>
         <div className="explore-items">

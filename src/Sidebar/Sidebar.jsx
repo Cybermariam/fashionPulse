@@ -1,28 +1,11 @@
-// import './Sidebar.css';
-// import Category from './Category/Category';
-// import Athletics from './Athletics/Athletics';
-// import Lifestyle from './Lifestyle/Lifestyle';
-
-// export default function Sidebar() {
-//   return (
-//     <>
-//       <section className="sidebar">
-//         <Category />
-//         <Athletics />
-//         <Lifestyle />
-//       </section>
-//     </>
-//   );
-// }
-
 import './Sidebar.css';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>Men&#39;s Fashion</h2>
+      <h3>Men&#39;s Fashion</h3>
       <ul className="sidebar-menu">
-        <li>Shoes / Sneakers</li>
+        <li className="sidebar-category">Shoes / Sneakers</li>
         <li>
           Shoes
           <ul className="submenu">

@@ -1,19 +1,16 @@
-import Sidebar from '../../Sidebar/Sidebar';
 import Products from '../../components/Products/Products';
-
+import PropTypes from 'prop-types';
 import Category from '../../components/Category/Category';
+import Sidebar from '../../Sidebar/Sidebar';
 
-function Home() {
+function Home({ incrementCartCount }) {
   return (
     <>
-      <div className="banner">
-        Get 20% Off Your First Order Today. Order now!
-      </div>
       <h1 className="heading"> MEN&#39;S SNEAKERS</h1>
       <div className="content-container">
         <Sidebar />
         <div className="main-content">
-          <Products />
+          <Products incrementCartCount={incrementCartCount} />
           <Category />
         </div>
       </div>
@@ -22,3 +19,6 @@ function Home() {
 }
 
 export default Home;
+Home.propTypes = {
+  incrementCartCount: PropTypes.func.isRequired,
+};

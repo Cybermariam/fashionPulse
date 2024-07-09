@@ -6,7 +6,7 @@ export default function footer() {
     <div className="footer">
       <div className="sb_footer section_padding">
         <div className="sb_footer-links">
-          <div className="sb_footer-links-div">
+          <div className="sb_footer-links-di">
             <img src={Logo} alt="FashionPulse logo" className="logo" />
             <small>2089 Allen Avenue, Ikeja, Lagos +234 000 888 999 88</small>
             <a href="#">Info@Fashionpulse.com</a>

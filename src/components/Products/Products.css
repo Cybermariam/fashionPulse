@@ -46,8 +46,8 @@
 }
 
 .card {
-  flex: 1 1 21%; /* This will adjust the width of the cards */
-  margin: 20px 0;
+  flex: 1 1 calc(20% - 20px); /* This will adjust the width of the cards */
+  margin: 10px;
   border: 2px solid #ededed;
   padding: 10px;
   cursor: pointer;

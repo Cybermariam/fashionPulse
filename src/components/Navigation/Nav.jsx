@@ -1,10 +1,16 @@
 import './Nav.css';
 import Logo from '../../../public/logo.png';
+import { useNavigate } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 import { FiHeart } from 'react-icons/fi';
 import { AiOutlineShopping } from 'react-icons/ai';
+import PropTypes from 'prop-types';
 
-export default function Nav() {
+export default function Nav({ cartItemCount }) {
+  const navigate = useNavigate();
+  const handleCartClick = () => {
+    navigate('/cart');
+  };
   return (
     <nav>
       <div className="nav-container">
@@ -24,8 +30,15 @@ export default function Nav() {
             <a href="#">
               <FiHeart className="nav-icons" />
             </a>
-            <a href="#">
+            <a
+              href="#"
+              onClick={handleCartClick}
+              className="cart-icon-container"
+            >
               <AiOutlineShopping className="nav-icons" />
+              {cartItemCount !== undefined && (
+                <span className="cart-count">{cartItemCount}</span>
+              )}
             </a>
           </div>
         </div>
@@ -33,3 +46,6 @@ export default function Nav() {
     </nav>
   );
 }
+Nav.propTypes = {
+  cartItemCount: PropTypes.number.isRequired,
+};
