@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import './Banner.css';
 
 const messages = [
-  { text: 'Get 20% Off Your First Order Today.', span: 'Order now!' },
-  { text: 'Sale: Up to 14% off.', span: 'Shop now!' },
-  { text: 'Collections: Find your steez.', span: 'Shop now!' },
+  { text: 'Get 20% Off Your First Order Today.', span: ' Order now!' },
+  { text: 'Sale: Up to 14% off.', span: ' Shop now!' },
+  { text: 'Collections: Find your steez.', span: ' Shop now!' },
 ];
 
 export default function Banner() {

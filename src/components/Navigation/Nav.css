@@ -10,6 +10,9 @@ nav {
   align-items: center;
   width: 100%;
 }
+.menu-icon {
+  display: none;
+}
 
 .navbar-menu {
   display: flex;
@@ -85,14 +88,11 @@ nav {
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
-  .navbar-menu {
-    gap: 20px;
-  }
-  .navbar-right {
-    gap: 10px;
+  .menu-icon {
+    display: block;
   }
   .search-input {
-    width: 100px;
+    display: none;
   }
 }
 

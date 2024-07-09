@@ -1,4 +1,5 @@
 import './Nav.css';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import Logo from '../../../public/logo.png';
 import { useNavigate } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
@@ -14,6 +15,7 @@ export default function Nav({ cartItemCount }) {
   return (
     <nav>
       <div className="nav-container">
+        <RxHamburgerMenu className="menu-icon " />
         <a href="/">
           <img src={Logo} alt="Fashionpulse logo" className="logo" />
         </a>
