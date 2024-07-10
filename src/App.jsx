@@ -16,18 +16,19 @@ function App() {
 
   return (
     <>
-      <Navigation cartItemCount={cartItemCount} />
-      <Banner />
+      <div className="container">
+        <Navigation cartItemCount={cartItemCount} />
+        <Banner />
 
-      <Routes>
-        <Route
-          path="/"
-          element={<Home incrementCartCount={incrementCartCount} />}
-        />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-      </Routes>
-
+        <Routes>
+          <Route
+            path="/"
+            element={<Home incrementCartCount={incrementCartCount} />}
+          />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   );
