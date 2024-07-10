@@ -13,7 +13,7 @@ export default function Banner() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentMessageIndex(prevIndex => (prevIndex + 1) % messages.length);
-    }, 3000); // Change message every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);

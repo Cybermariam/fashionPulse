@@ -37,7 +37,6 @@ const Sidebar = () => {
       </ul>
       <div className="pick-up-now">
         <h3>Pick Up Now</h3>
-        {/* Additional content for Pick Up Now */}
       </div>
     </div>
   );
