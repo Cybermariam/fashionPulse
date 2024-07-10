@@ -9,12 +9,19 @@ nav {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
 .menu-icon {
   display: none;
 }
@@ -24,27 +31,30 @@ nav {
   list-style: none;
   gap: 75px;
 }
+
 .navbar-menu li {
   cursor: pointer;
-  font-family: urbanist;
+  font-family: Urbanist;
   font-weight: 500;
   font-size: 16px;
   line-height: 19.2px;
 }
+
 .navbar-menu li:hover {
   font-size: 18px;
 }
+
 .navbar-right {
   display: flex;
   align-items: center;
   gap: 70px;
 }
+
 .searchbar {
   position: relative;
   display: flex;
   align-items: center;
   background-color: #fff;
-
   border-radius: 20px;
   padding: 8px 10px;
 }
@@ -69,6 +79,7 @@ nav {
   align-items: center;
   gap: 15px;
 }
+
 .nav-icons {
   width: 1.5rem;
   height: 1.5rem;
@@ -77,11 +88,13 @@ nav {
   cursor: pointer;
   position: relative;
 }
+
 .cart-icon-container {
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .cart-count {
   position: absolute;
   top: -8px;
@@ -97,27 +110,75 @@ nav {
   font-size: 12px;
   font-weight: 600;
 }
+
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
   }
-  .search-input {
+
+  nav {
+    height: 50px;
+    margin-bottom: 0px;
+    border-radius: 0;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar-menu {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 1;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar-menu li:hover {
+    font-size: 16px;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  .search-icon-mobile {
+    display: block;
+  }
+
+  .navbar-right {
+    display: flex;
+    gap: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .navbar-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .logo {
+    width: 100px;
+    height: auto;
   }
+
   .navbar-right {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
     gap: 10px;
-  }
-  .search-input {
-    width: 80px;
   }
 }

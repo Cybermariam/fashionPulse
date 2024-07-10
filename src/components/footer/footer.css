@@ -111,6 +111,10 @@ a {
     margin-left: 0rem;
     margin-top: 1rem;
   }
+  .section_padding {
+    margin-top: 20px;
+    padding: 3rem 3rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .sb_footer-heading h1 {
