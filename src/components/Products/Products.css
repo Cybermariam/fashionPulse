@@ -67,6 +67,6 @@
 
 @media screen and (max-width: 480px) {
   .card {
-    flex: 1 1 100%;
+    flex: 1 1 calc(50% - 20px);
   }
 }
